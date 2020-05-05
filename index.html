@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Simple Alert</h2>
+
+<button onclick="myTest()">Click Here</button>
+<script>
+function myTest() {
+alert("User should click OK to proceed further");
+
+}
+</script>
+
+
+</body>
+</html>
+
+
+</br>
+</br>
+</br>
+</br>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Confirmation Alert</h2>
+
+<button onclick="myMethod()">Click Here</button>
+</br>
+</br>
+<div id="demo">
+    <p>
+    <label for="demo">
+        <id="p_scnt" size="20" name="demo">
+    </label>
+    </p>
+</div>
+</br>
+
+<script>
+function myMethod() {
+  var txt;
+  if (confirm("Press a OK to apply changes")) {
+    txt = "You have applied the changes succesfully.";
+  } else {
+    txt = "You have denied the changes";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Prompt Alert</h2>
+
+<button onclick="myFunction()">Click Here</button>
+</br>
+</br>
+<div id="test">
+    <p>
+    <label for="test">
+        <id="p_scnt" size="20" name="test">
+    </label>
+    </p>
+</div>
+</br>
+
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "");
+  if (person == null || person == "") {
+    txt = "No actions will be performed further";
+  } else {
+    txt = "Hello " + person;
+  }
+  document.getElementById("test").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
